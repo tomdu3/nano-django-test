@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-SECRET_KEY = "django-insecure-zdipo$%c^mmfgi&^()3)yb9s8kuq=e2)0iqlmjy$6ju)a4h*ew"
+SECRET_KEY = "django-insecure-$_#ct)ltd=(5ranx1hpdy+fv=g1!10$flwg@-%iz2zl8i@a3s!"
 DEBUG = True
 ALLOWED_HOSTS = []
 INSTALLED_APPS = [
