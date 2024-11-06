@@ -10,4 +10,10 @@ Inspired by [NanoDjango - single-file Django apps | uv integration](https://yout
 uv run app.py
 ```
 
+- convert to a full Django app
+
+```bash
+uv  run --with nanodjango nanodjango convert app.py ./nanodjango-converted
+```
+
 [NanoDjango - Documentation](https://nanodjango.readthedocs.io/en/latest/)
