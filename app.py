@@ -19,7 +19,16 @@ class Comment(models.Model):
     text = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     # add the user
-    created_by = models.ForeignKey(User, on_delete=models.CASCADE) 
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE)
+
+class CommentSchema(app.ninja.Schema):
+    text: str
+
+
+
+@app.api.get('/comments/', response=list[CommentSchema])
+def api_comments(request):
+    return Comment.objects.all().order_by('-created_at')
 
 
 @app.route('/comments')
