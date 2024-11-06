@@ -5,13 +5,11 @@
 from nanodjango import Django
 from django.shortcuts import render
 from django.db import models
-from django.contrib.auth import get_user_model
 from datetime import datetime
 
 
 app = Django()
 
-User = get_user_model()
 
 class Comment(models.Model):
     '''
