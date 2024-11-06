@@ -6,6 +6,7 @@ from nanodjango import Django
 from django.shortcuts import render
 from django.db import models
 from django.contrib.auth import get_user_model
+from datetime import datetime
 
 
 app = Django()
@@ -22,7 +23,9 @@ class Comment(models.Model):
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
 
 class CommentSchema(app.ninja.Schema):
+    id: int
     text: str
+    created_at: datetime
 
 
 

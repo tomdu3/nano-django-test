@@ -9,3 +9,5 @@ Inspired by [NanoDjango - single-file Django apps | uv integration](https://yout
 ```bash
 uv run app.py
 ```
+
+[NanoDjango - Documentation](https://nanodjango.readthedocs.io/en/latest/)
